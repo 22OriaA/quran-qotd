@@ -1,0 +1,59 @@
+.main {
+    position: relative;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    text-align: center;
+    font-family: Poppins;
+    color: white;
+    font-weight: bolder;
+    font-size: 76px;
+
+    overflow: hidden;
+}
+
+.main::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background-image: url("https://4kwallpapers.com/images/wallpapers/waterfall-winter-river-iceland-5k-5144x3429-5421.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    filter: blur(10px);
+    transform: scale(1.1);
+
+    z-index: -1;
+}
+
+.main::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.3);
+    z-index: -1;
+}
+
+.large-text {
+    margin: -41px;
+}
+
+.quran-text {
+    margin-top: -1px;
+    color: gainsboro;
+    font-family: Times New Roman;
+    font-size: 19px;
+    font-style: italic;
+}
+
+.small-text {
+    margin-bottom: 40px;
+    font-size: 25px;
+    font-style: italic;
+}
